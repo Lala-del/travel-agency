@@ -140,19 +140,28 @@ input, textarea {
 	 position: relative;
 	 top: 41px;
 }
+
+.nav-social {
+	position: relative;
+    top: 39px;
+}
 /*Aparecer menu*/
  .show {
 	 left: 0;
 }
  .intro .image-layer {
-	 padding: 190px;
-	 height: auto;
+	 height: 100vh;
 	 background-size: cover;
 	 background-position: center center;
 	 background-repeat: no-repeat;
 	 overflow-x: hidden;
 }
+
+.intro .content-box {
+    padding-top: 170px;
+}
  
+
 
  /* .nav__lang select  {
 	 background: transparent;
@@ -284,9 +293,9 @@ input, textarea {
 
 /* Tour Section */
 
-.tour {
+/* .tour {
 	margin: 80px 0 0 0;
-}
+} */
 
 .tour__content {
 	position: relative;
@@ -348,8 +357,8 @@ input, textarea {
     border-bottom: solid 2px #F15C2F;
     position: absolute;
 	border-radius: 3px;
-    left: 0;
-    top: 0;
+    left: 12px;
+    top: -3px;
     z-index: 1;
 }
 
@@ -474,14 +483,14 @@ input, textarea {
 	background-image: url('../img/icons/tel-contact.svg');
 }
 
-.owl-dots, .owl-nav {
+.owl-dots {
 	display:inline-block!important;
 }
 
 .owl-dots {
     position: relative;
-    bottom: 29px;
-	left: 20px;
+    bottom: 66px;
+    left: 117px;
 }
 .owl-dots button.owl-dot {
   width: 330px;
@@ -582,13 +591,20 @@ input, textarea {
 }
 
 
+
+
 /*Map section */
 
 .map {
-    padding-top: 70px;
+    padding-top: 26px;
   }
   .map .contact-map #map {
     height: 300px;
+	border-radius: 8px;
+  }
+
+  .location-map {
+	  padding: 10px 0px 30px 0px;
   }
 
 
@@ -670,17 +686,17 @@ input, textarea {
 
 .title-box .text:after {
 	content: '';
-    width: 30%;
+    width: 12%;
     border-bottom: solid 2px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 14px;
-    bottom: -12px;
+    bottom: -20px;
     z-index: 1;
 }
 
 .first {
-	padding-top: 27px;
+	padding-top: 40px;
 }
 
 .form-group label {
@@ -721,7 +737,7 @@ input, textarea {
 	font-size: 19px;
 	line-height: 30px;
 	color: #2D2522;
-	margin-bottom: 49px;
+	margin-bottom: 25px;
 }
 
 .contact_location p {
@@ -729,12 +745,12 @@ input, textarea {
     text-align: center;
     position: relative;
     bottom: 4px;
-    left: 10px;
+    left: 9px;
 	font-size: 16px;
 }
 
 .contact_location {
-	margin: 15px 0px;
+	margin: 14px 0px;
 }
 
 .social-icons a {
@@ -748,8 +764,9 @@ input, textarea {
 	font-size: 19px;
 	line-height: 30px;
 	color: #2D2522;
-	margin-bottom: 23px;
 }
+
+
 
 .contact_payment .visa {
 	padding: 24px 0px;
@@ -758,7 +775,7 @@ input, textarea {
 .contact_payment .master {
 	position: relative;
     top: -13px;
-	left: 11px;
+	left: 19px;
 }
 
 .footer-orange {
@@ -788,6 +805,11 @@ input, textarea {
 }
 .footer-orange_right a {
 	color:  #FFFFFF;
+}
+
+.footer-orange-left strong {
+	font-weight: 600;
+	padding-left: 6px;
 }
 
 .footer-orange_right p {
@@ -1020,6 +1042,7 @@ input, textarea {
 	/* padding: 100px 0 70px 0; */
 	background:#FFF4F1;
 	margin: 20px 0px 70px 0px ;
+	overflow-x: hidden;
 
 }
 
@@ -1055,6 +1078,10 @@ input, textarea {
 	font-size: 16px;
 	line-height: 30px;
 	color: #000000;
+}
+
+.staff__company .owl-dots {
+	    bottom: 46px!important;
 }
 
 .staff__item {
@@ -1246,7 +1273,7 @@ input, textarea {
 }
 
 .contact__us {
-	padding: 160px 10px;
+	padding: 160px 10px 30px 10px;
 }
 
 .contact__row {
@@ -1259,14 +1286,14 @@ input, textarea {
 
 .contact__row h2:after{
     content: '';
-    width: 28%;
+    width: 17%;
     border-bottom: solid 2px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: 15px;
-    bottom: 125px;
+    bottom: 147px;
     z-index: 1;
-	padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 .contact__row p {
@@ -1277,11 +1304,15 @@ input, textarea {
 	display: flex;
 	align-items: center;
 	color: #4F4F4F;
-	padding: 20px 0px;
+	padding: 25px 0px;
 }
 
-.contact__us .contact-map {
-	height: 583px!important;
+.contact__row form {
+	padding: 0px 24px;
+}
+
+.contact__us .contact-map #map {
+	height: 586px!important;
 	border-radius: 6px;
 	position: relative;
 }
@@ -1432,7 +1463,7 @@ input, textarea {
 
 .map-box .south {
     position: absolute;
-    bottom: 363px;
+    bottom: 495px;
     left: 548px;
     z-index: 999;
 }
@@ -1447,8 +1478,8 @@ input, textarea {
 
 .map-box .aze {
 	position: absolute;
-    bottom: 466px;
-    left: 514px;
+    bottom: 575px;
+    left: 495px;
     z-index: 999;
 }
 
@@ -1460,16 +1491,16 @@ input, textarea {
 	color: #2D2522;
 }
 
-.map-box .see-more {
+.map-box .see-more-east {
     display: inline-block;
-    bottom: 516px;
+    bottom: 521px;
     padding: 20px;
-    left: 72%;
+    left: 15%;
     position: relative;
     z-index: 999;
 }
 
-.map-box .see-more:after {
+.map-box .see-more-east:after {
 	content: '';
     background-color: #F15C2F;
    display: inline-block;
@@ -1483,7 +1514,7 @@ input, textarea {
 	position: absolute;
 }
 
-.map-box .see-more:before {
+.map-box .see-more-east:before {
 	content: '';
     background-color: #FAB19B;;
    display: inline-block;
@@ -1497,7 +1528,7 @@ input, textarea {
 	position: absolute;
 }
 
-.see-more a {
+.see-more-east a {
 	position: relative;
     bottom: 90px;
     right: 100px;
@@ -1508,9 +1539,151 @@ input, textarea {
 	color: #F15C2F;
 }
 
-.see-more {
-	display: none;
+.map-box .see-more-west {
+    display: inline-block;
+    bottom: 535px;
+    padding: 20px;
+    left: -20%;
+    position: relative;
+    z-index: 999;
 }
+
+.map-box .see-more-west:after {
+	content: '';
+    background-color: #F15C2F;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+    right: 59px;
+    top: 98px;
+	position: absolute;
+}
+
+.map-box .see-more-west:before {
+	content: '';
+    background-color: #FAB19B;;
+   display: inline-block;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 12.5px;
+    right: 54px;
+    top: 93px;
+	position: absolute;
+}
+
+.see-more-west a {
+	position: relative;
+    bottom: 90px;
+    right: 209px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F15C2F;
+}
+
+.map-box .see-more-north {
+    display: inline-block;
+    bottom: 620px;
+    padding: 20px;
+    left: 46%;
+    position: relative;
+    z-index: 999;
+}
+
+.map-box .see-more-north:after {
+	content: '';
+    background-color: #F15C2F;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+    right: 283px;
+    top: 98px;
+	position: absolute;
+}
+
+.map-box .see-more-north:before {
+	content: '';
+    background-color: #FAB19B;;
+   display: inline-block;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 12.5px;
+    right: 278px;
+    top: 93px;
+	position: absolute;
+}
+
+.see-more-north a {
+	position: relative;
+    bottom: 90px;
+    right: 100px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F15C2F;
+}
+
+.map-box .see-more-south {
+    display: inline-block;
+     bottom: 372px;
+    padding: 20px;
+    left: 51%;
+    position: relative;
+    z-index: 999;
+}
+
+.map-box .see-more-south:after {
+	content: '';
+    background-color: #F15C2F;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+    right: 286px;
+    bottom: 107px;
+	position: absolute;
+}
+
+.map-box .see-more-south:before {
+	content: '';
+    background-color: #FAB19B;;
+   display: inline-block;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 12.5px;
+    right: 281px;
+    bottom: 102px;
+	position: absolute;
+}
+
+.see-more-south a {
+	position: relative;
+    bottom: 13px;
+    right: 100px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F15C2F;
+}
+
+
 
 .tabs-section {
 	padding: 60px 0px 100px 0px;
@@ -1746,7 +1919,6 @@ input, textarea {
 
 .region-tour {
 	padding: 0px 0px 60px 0px;
-	margin: 0px 0px 60px 0!important;
 }
 
 .error .error-inner {
@@ -1777,4 +1949,43 @@ input, textarea {
 
 .error {
 	background:#FFF4F1;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: absolute;
+  z-index: 9994;
+  top: -43px;
+  right: -127px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display:none;
+}
+
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }

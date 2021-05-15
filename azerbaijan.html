@@ -51,12 +51,12 @@
 
 						
 
-							<!-- <div class="nav-social">
+							
+							<div class="nav-social">
 								<a href="#" class="nav-social-icon"><img src="img/icons/fb.png" alt=""/></a>
 								<a href="#" class="nav-social-icon"><img src="img/icons/intagram.png"/></a>
-								<a href="#" class="nav-social-icon"><img src="img/icons/linkedin.png"/></a>
-								<a href="#" class="nav-social-icon"><img src="img/icons/youtube.png"/></a>
-							</div> -->
+							</div>
+
 
 						
 
@@ -118,23 +118,39 @@
                                     <img src="img/icons/arrow-right.png" alt="">
                                     <a href="index.html" class="about">Azerbaijan</a>
                                 </div>
+                               
 									<div class = "map-box" >
 										<img src="img/images/tours/map 2.png" class="mapping" alt="">
                                         <div class="north">
                                             <a href="#" >North</a>
                                         </div>
+                                         <div id="mySidenav" class="sidenav">
+                                            <a href="#">qabala</a>
+                                        </div>
+                                         <div class="see-more-north">
+                                                <img src="img/images/tours/Vector 11.png" alt="">
+                                                <a href="#" id="see-more">more</a>
+                                        </div>
                                         <div class="west">
                                             <a href="#" >West</a>
+                                        </div>
+                                         <div class="see-more-west">
+                                                <img src="img/images/tours/Vector 11 (1).png" alt="">
+                                                <a href="#">more</a>
                                         </div>
                                         <div class="east">
                                             <a href="#" >East</a>
                                         </div>
-                                         <div class="see-more">
+                                         <div class="see-more-east">
                                                 <img src="img/images/tours/Vector 11.png" alt="">
                                                 <a href="#">more</a>
                                         </div>
                                         <div class="south">
                                             <a href="#" >South</a>
+                                        </div>
+                                         <div class="see-more-south">
+                                                <img src="img/images/tours/Vector-down.png" alt="">
+                                                <a href="#">more</a>
                                         </div>
                                         <div class="aze">
                                             <h1>
@@ -503,12 +519,34 @@
 
 
 
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script  src = "js/owl.carousel.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src = "js/app.js"></script>
 	<script src="./js/map.js"></script>
+    <script>
+        // function openNav() {
+        // document.getElementById("mySidenav").style.opacity = "1";
+        // document.getElementById("mySidenav").style.width = "250px";
+        // document.getElementById("see-more").style.marginRight = "0";
+        // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        // }
+
+        // function closeNav() {
+        // document.getElementById("mySidenav").style.opacity = "0";
+        // document.getElementById("see-more").style.marginRight= "0";
+        //  document.getElementById("mySidenav").style.width = "250px";
+        // document.body.style.backgroundColor = "white";
+
+
+        $(document).ready(function(){
+            $("#see-more").click(function(){
+            $("#mySidenav").fadeToggle();
+             console.log(skdjfgh)
+            });
+           
+        });
+</script>
 </body>
 </html>
