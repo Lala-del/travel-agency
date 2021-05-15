@@ -145,6 +145,8 @@ $('.stop').on('click',function(){
 })
 
 
+
+
 var owl = $('#slider-header');
 owl.owlCarousel({
     responsive:{
@@ -176,4 +178,34 @@ $('.stop').on('click',function(){
 })
 
 
+
+var owl = $('#slider-tour');
+owl.owlCarousel({
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    },
+    loop:true,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    nav: false,
+		dots: false,
+		loop: true,
+		navText: ["<span class='icon-tour-left'></span>", "<span class='icon-tour-right'></span>"],
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
 
