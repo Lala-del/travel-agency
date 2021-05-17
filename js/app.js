@@ -38,6 +38,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
       var thisCustomSelect = $(this),
         options = thisCustomSelect.find("option"),
         firstOptionText = options.first().text();
+        
 
       var selectedItem = $("<div></div>", {
         class: "selected-item"
@@ -127,7 +128,7 @@ owl.owlCarousel({
     },
     loop:true,
     margin:15,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
     nav: true,

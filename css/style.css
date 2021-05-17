@@ -85,14 +85,22 @@ input, textarea {
 	 border-radius: 50%;
 	 cursor: pointer;
 }
+
+.nav__perfil {
+	position: relative;
+	right: 42px;
+}
  .nav__perfil::after {
-	 content: "";
-	 height: 112px;
-	 border: 1px solid #ff6d41;
+	position: relative;
+    content: "";
+    height: 112px;
+    border: 1px solid #ff6d41;
+    left: 9px;
 }
  .nav__list {
 	 position: relative;
 	 top: 43px;
+	 right: 17px;
 }
  .nav__img {
 	 display: flex;
@@ -116,7 +124,11 @@ input, textarea {
 }
  .nav__menu, .nav__number, .nav__social {
 	 height: 112px;
-	 border-right: 1px solid #ff6d41;
+	 border-right: 0.5px solid #ff6d41;
+}
+
+.nav__menu {
+	padding-right: 13px;
 }
  .nav__item a {
 	 margin: 2.5rem 0;
@@ -126,8 +138,18 @@ input, textarea {
 	 line-height: 22.28px;
 	 color: rgba(255, 255, 255, 1);
 }
+
+.nav__link.active{
+   border-top: solid 2px #FFFFFF;
+    border-radius: 0px;
+    padding: 8px 0px;
+}
  .nav__link::hover {
 	 text-decoration: none;
+}
+
+.header-text{
+	margin-bottom: 52px;
 }
  .nav__social {
 	 padding-right: 10px;
@@ -143,7 +165,25 @@ input, textarea {
 
 .nav-social {
 	position: relative;
-    top: 39px;
+	padding-right: 5px;
+}
+
+.nav-social a {
+	padding: 0px 4px;
+}
+
+.nav-soc {
+	vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.nav-soc:after {
+	position: relative;
+    content: "";
+    height: 112px;
+    border: 1px solid #ff6d41;
+    left: 9px;
 }
 /*Aparecer menu*/
  .show {
@@ -158,7 +198,34 @@ input, textarea {
 }
 
 .intro .content-box {
-    padding-top: 170px;
+    display: flex;
+    padding: 200px 0px 100px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-p, .footer-icon {
+	display: inline-block;
+}
+
+.footer-icon .mail-icon {
+	position: relative;
+    right: 3px;
+}
+
+.footer-icon .tel-icon {
+	position: relative;
+	left: 0px;
+}
+
+.p-inner {
+	display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    align-items: center;
+    padding-left: 9px;
+    bottom: 4px;
 }
  
 
@@ -193,7 +260,7 @@ input, textarea {
   margin: 20px 0;
   background:transparent;
   border:none;
-  right: 21px;
+  right: 19px;
 }
 
 .custom-select select {
@@ -303,6 +370,13 @@ input, textarea {
     align-items: center;
     justify-content: space-between;
 }
+.tour-right {
+    text-align: end;
+}
+.tour__row{
+    display: flex;
+    justify-content: space-between;
+}
 
 .tour, .map, .intro__company, .services__company h1 {
 	font-style: normal;
@@ -331,7 +405,7 @@ input, textarea {
 .visa__company h1:after {
     content: '';
     width: 15%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left:-3px;
@@ -342,7 +416,7 @@ input, textarea {
 .tour h1:after {
     content: '';
     width: 30%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: 15px;
@@ -354,7 +428,7 @@ input, textarea {
 .map h1:after {
     content: '';
     width: 30%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 12px;
@@ -365,7 +439,7 @@ input, textarea {
 .intro__company h1:after {
     content: '';
     width: 15%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 6px;
@@ -377,7 +451,7 @@ input, textarea {
 .services__company h1:after {
     content: '';
     width: 12%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 0;
@@ -400,7 +474,7 @@ input, textarea {
 .success__company h1:after {
     content: '';
     width: 12%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 0;
@@ -551,7 +625,7 @@ input, textarea {
     position: absolute;
     bottom: 295px;
     border-radius: 50%;
-    left: 152px;
+    left: 16px;
 	background-color: rgba(241, 92, 47, 0.7);
 }
 .icon-tour-left {
@@ -561,7 +635,7 @@ input, textarea {
     position: absolute;
     bottom: 295px;
     border-radius: 79%;
-    right: 145px;
+    right: 16px;
     background-color: rgba(241, 92, 47, 0.7);
 }
 
@@ -598,7 +672,7 @@ input, textarea {
 .map {
     padding-top: 26px;
   }
-  .map .contact-map #map {
+  .map .contact-map iframe {
     height: 300px;
 	border-radius: 8px;
   }
@@ -606,7 +680,9 @@ input, textarea {
   .location-map {
 	  padding: 10px 0px 30px 0px;
   }
-
+.map .gm-inset-map, .gmnoprint  {
+    display: none!important;
+}
 
  #map::after {
     content: "";
@@ -618,6 +694,8 @@ input, textarea {
     background-color: rgba(241, 92, 47, 1);
     opacity: .1;
 }
+
+
 
 
 
@@ -687,7 +765,7 @@ input, textarea {
 .title-box .text:after {
 	content: '';
     width: 12%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 14px;
@@ -745,7 +823,7 @@ input, textarea {
     text-align: center;
     position: relative;
     bottom: 4px;
-    left: 9px;
+    left: 10px;
 	font-size: 16px;
 }
 
@@ -921,6 +999,13 @@ input, textarea {
 	letter-spacing: 0.5px;
 	padding: 20px 0px;
 }
+
+.services__company {
+	padding: 20px 0px 74px 0px;
+}
+.company__text_two p{
+	padding-right: 29px;
+}
 .company__text strong {
 	color:#F15C2F;
 	font-weight:bold;
@@ -940,6 +1025,7 @@ input, textarea {
 	position:relative;
 	height: auto;
 	width: 100%;
+	right: 17px;
 }
 
 .side__content-visa .layer {
@@ -962,7 +1048,7 @@ input, textarea {
 	height: auto;
 	position: absolute;
     top: -25px;
-    left: 24px;
+    left: 2px;
 }
 
 .end__img img  {
@@ -971,7 +1057,7 @@ input, textarea {
 }
 
 .gallery__row {
-	padding: 90px 0px 30px 0px;
+	padding: 36px 0px 36px 0px;
 }
 
 .detail__content {
@@ -1063,7 +1149,7 @@ input, textarea {
 .staff__company h1:after {
 	content: '';
     width: 12%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
     left: 0;
@@ -1186,7 +1272,7 @@ input, textarea {
 .visa__info h3:after {
 	content: '';
     width: 15%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left:19px;
@@ -1215,7 +1301,7 @@ input, textarea {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 15px;
-	line-height: 25px;
+	line-height: 23px;
 	color: #4F4F4F;
 	letter-spacing: 1px;
 	padding: 5px 3px;
@@ -1264,7 +1350,7 @@ input, textarea {
     content: '';
     height: 51px;
     width: 1px;
-    border-left: solid 2px #F15C2F;
+    border-left: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: -14px;
@@ -1287,7 +1373,7 @@ input, textarea {
 .contact__row h2:after{
     content: '';
     width: 17%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: 15px;
@@ -1323,16 +1409,18 @@ input, textarea {
     top: 0;
     right: 50px;
     position: absolute;
+	border-radius: 8px;
 }
 
 .contact__icon {
 	display: inline-block;
     position: relative;
-    top: 6px;
+
 }
 
 .contact__text {
 	display:inline-block;
+	padding-left: 4px;
 }
 
 .contact__detail {
@@ -1340,7 +1428,7 @@ input, textarea {
 }
 
 .contact__detail span {
-	padding: 0px 3px;
+	padding: 0px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 18px;
@@ -1349,7 +1437,8 @@ input, textarea {
 
 .letter-icon {
 	position:relative;
-	bottom: 3px;
+	bottom: -3px;
+    left: 2px;
 }
 
 .number__text span {
@@ -1802,7 +1891,7 @@ input, textarea {
 .header-card h2:after {
     content: '';
     width: 16%;
-    border-bottom: solid 2px #F15C2F;
+    border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: 15px;
@@ -1878,7 +1967,7 @@ input, textarea {
 }
 
 .about__tour .company__link {
-	margin: 10px 0px 50px 125px;
+	margin: 0px 0px 50px 0px;
 }
 
 .about__tour .intro__header {
@@ -1900,7 +1989,7 @@ input, textarea {
     content: '';
     height: 91px;
     width: 1px;
-    border-left: solid 2px #F15C2F;
+    border-left: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: 0px;
@@ -1922,34 +2011,38 @@ input, textarea {
 }
 
 .error .error-inner {
-	margin: 140px auto 0px auto;
-	display: block;
+	margin-top: 126px;
+	 /* padding: 200px 0px; */
+	 height: 420px;
+	 background-size: contain;
+	 background-position: top center;
+	 background-repeat: no-repeat;
+	 overflow-x: hidden;
 }
 
-.error-inner img {
-	display: block;
-	margin: 0 auto;
-	height: 420px;
-}
-
-.error-inner h3{
-	font-style: normal;
+.error-text {
+    font-style: normal;
 	font-weight: 500;
 	font-size: 32px;
 	line-height: 39px;
 	text-align: center;
 	color: #2D2522;
 	padding: 30px 0px
-
 }
 
-.error-inner strong {
+
+
+.error{
+	height:100vh;
+	background:#FFF4F1;
+}
+
+
+
+.error-text strong {
 	color: #F15C2F;
 }
 
-.error {
-	background:#FFF4F1;
-}
 
 
 
@@ -1988,4 +2081,27 @@ input, textarea {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.owl-nav button {
+   outline: none;
+}
+
+.loc-i {
+	position: relative;
+    bottom: 15px;
+    top: -9px;
+}
+
+.text-letter {
+	padding-left: 16px;
+}
+
+.text-loc {
+	padding-left: 10px;
+}
+
+.business-img {
+	height: 186px;
+    width: 100%;
 }

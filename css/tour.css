@@ -3,14 +3,14 @@
 }
 
 .tour__cover {
-	height:480px;
+    height: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
     top: 50px;
-    width: 100%;
-	border-radius: 8px;
+    width: 1103px;
+    border-radius: 8px;
 }
 
 .tour__cover:after{
@@ -33,8 +33,10 @@
     position: relative;
     bottom: 0px;
     left: 114%;
-    width: 725px;
+    width: 708px;
 	z-index: 99;
+	border-radius: 0px 8px 0px 0px;
+
 }
 
 .service-tab img {
@@ -48,7 +50,7 @@
 .service-tab {
 	position: relative;
     left: 19px;
-	top: 123%;
+    top: 264px;
 }
 
 .tab__inner {
@@ -57,8 +59,9 @@
     background-position: center center;
     position: relative;
     bottom: 0px;
-    width: 242px;
+    width: 236px;
     height: 215px;
+	
 }
 
 .tour__main span {
@@ -71,6 +74,9 @@
     padding: 15px;
     position: relative;
 	z-index: 999;
+}
+.nav-tabs {
+    border-bottom: none!important;
 }
 
 .tab__inner a {
@@ -106,11 +112,14 @@
     left: 0;
     width: 100%;
     height: 100%;
+	border-radius: 0px 0px 8px 0px;
 
 }
 
 .right__side {
 	z-index:99;
+	 width: 741px;
+	
 }
 
 .tab-main >  span, p {
@@ -151,9 +160,7 @@
 	z-index: 99;
 }
 
-.tour__main .company__link {
-	margin-left: 109px;
-}
+
 
 .tour__main .tour__name a {
     font-style: normal;
@@ -195,9 +202,7 @@
 	 border-radius: 8px;
 }
 
-.about__tour .company__link {
-	margin: 10px 0px 50px 125px;
-}
+
 
 .about__tour .intro__header {
 	padding: 15px 0px;
