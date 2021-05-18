@@ -87,18 +87,14 @@ input, textarea {
 
 .nav__perfil {
     position: relative;
+	border-right: 0.5px solid #ff6d41
     /* right: 9px; */
 }
- .nav__perfil::after {
-	position: relative;
-    content: "";
-    height: 112px;
-    border: 1px solid #ff6d41;
-    left: 9px;
-}
+
  .nav__list {
 	 position: relative;
 	 top: 43px;
+	 right: 8px;
 }
  .nav__img {
 	 display: flex;
@@ -111,7 +107,7 @@ input, textarea {
  .nav__number img {
 	 position: relative;
 	 top: 10px;
-	 padding-right: 9px;
+	 padding-right: 13px;
 }
  .nav__name {
 	 display: block;
@@ -139,12 +135,14 @@ input, textarea {
 
 .nav__link.active{
    border-top: solid 2px #FFFFFF;
-    border-radius: 0px;
-    padding: 8px 0px;
+    border-radius: 1px;
+    padding: 8px 2px;
 }
  .nav__link::hover {
 	 text-decoration: none;
 }
+
+
 
  .nav__social {
 	 padding-right: 10px;
@@ -178,7 +176,7 @@ input, textarea {
 	position: relative;
     content: "";
     height: 112px;
-    border: 1px solid #ff6d41;
+    border-right: 1px solid #ff6d41;
     left: 9px;
 }
 /*Aparecer menu*/
@@ -572,7 +570,7 @@ input, textarea {
 }
 .owl-dots button.owl-dot.active {
   background-color: #F15C2F!important;
-  height: 1px;
+  height: 1.25px;
 }
 .owl-dots button.owl-dot:focus {
   outline: none;
@@ -584,7 +582,7 @@ input, textarea {
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: inline-block;
-	background-image: url('../img/icons/thin_long_right.png');
+	background-image: url('../img/icons/left.png');
 }
 
 .arrow-icon-right {
@@ -594,7 +592,7 @@ input, textarea {
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: inline-block;
-	background-image: url('../img/icons/thin_long_left.png');
+	background-image: url('../img/icons/right.png');
 }
 
 .icon-tour-right:before {
@@ -858,8 +856,7 @@ input, textarea {
 }
 
 .footer-orange {
-    background-color: #F15C2F;
-    padding: 31px 101px;
+    padding: 31px 0px;
 }
 
 .footer-orange-left p {
@@ -897,6 +894,7 @@ input, textarea {
 }
 .second-footer {
 	margin-top:70px;
+	background-color: #F15C2F;
 }
 
 
@@ -1342,7 +1340,7 @@ input, textarea {
 	letter-spacing: 1px;
 	align-items: center;
 	color: #000000;
-	padding: 35px 0px 0px 0px;
+	padding: 35px 0px 0px 16px;
 	position: relative;
 }
 
@@ -1353,7 +1351,7 @@ input, textarea {
     border-left: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
-    left: -14px;
+    left: -4px;
     top: 39px;
     z-index: 1;
 }
@@ -1366,9 +1364,7 @@ input, textarea {
 	padding:60px 0px;
 }
 
-.contact__us .company__link {
-    padding-left: 10px;
-}
+
 
 .contact__row h2:after{
     content: '';
