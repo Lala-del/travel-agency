@@ -32,7 +32,7 @@
     background-position: center center;
     position: relative;
     bottom: 0px;
-    left: 114%;
+    left: 36%;
     width: 708px;
 	z-index: 99;
 	border-radius: 0px 8px 0px 0px;
@@ -49,32 +49,33 @@
 
 .service-tab {
 	position: relative;
-    left: 19px;
-    top: 264px;
+    left: 42px;
+    top: 93px;
 }
 
 .tab__inner {
-    padding: 97px 91px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    bottom: -83px;
+    bottom: -27px;
     width: 236px;
-    right: 72px;
-    height: 215px;
+    right: -27px;
+    position: relative;
 }
 
-.tour__main span {
+.tab__inner a img {
+    width: 248px;
+    height: 218px;
+}
+
+.tour__main .side-head {
    font-style: normal;
     font-weight: bold;
-    top: 19px;
+    left: 12px;
+    bottom: 124px;
     font-size: 32px;
     line-height: 40px;
-    color: #FFFFFF;
+    color: #2D2522;
     padding: 15px;
     position: relative;
-	z-index: 999;
+    z-index: 999;;
 }
 .nav-tabs {
     border-bottom: none!important;
@@ -93,7 +94,7 @@
 }
 
 
-.inner-second:after{
+/* .inner-second:after{
 	content: "";
     position: absolute;
     top: 0;
@@ -115,7 +116,7 @@
     height: 100%;
 	border-radius: 0px 0px 8px 0px;
 
-}
+} */
 
 .right__side {
 	z-index:99;
@@ -152,6 +153,7 @@
 
 .tab-main p {
 	top: 206px;
+    width: 36%;
     padding: 20px 33px;
 	font-style: normal;
 	font-weight: 500;

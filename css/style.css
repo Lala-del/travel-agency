@@ -87,7 +87,7 @@ input, textarea {
 
 .nav__perfil {
     position: relative;
-    right: 9px;
+    /* right: 9px; */
 }
  .nav__perfil::after {
 	position: relative;
