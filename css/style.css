@@ -1340,7 +1340,7 @@ input, textarea {
 	letter-spacing: 1px;
 	align-items: center;
 	color: #000000;
-	padding: 35px 0px 0px 16px;
+	padding: 35px 0px 0px 20px;
 	position: relative;
 }
 
@@ -1351,7 +1351,7 @@ input, textarea {
     border-left: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
-    left: -4px;
+    left: 1px;
     top: 39px;
     z-index: 1;
 }
