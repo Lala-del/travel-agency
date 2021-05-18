@@ -19,13 +19,10 @@
 </head>
 <body>
   <!--Header-->  
-         <header class="header">
-            
-
+          <header class="header">
              <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
-                <div class="container">
-					<nav class="nav" id="nav-menu"> 
-						<div class="nav__content bd-grid">
+                <nav class="nav" id="nav-menu"> 
+						   <div class="nav__content bd-grid">
 
 								<ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
 				
@@ -37,9 +34,9 @@
 				
 								<div class="nav__menu">
 									<ul class="nav__list">
-										<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-										<li class="nav__item"><a href="about-us.html" class="nav__link ">About</a></li>
-										<li class="nav__item"><a href="azerbaijan.html" class="nav__link active">Azerbaijan</a></li>
+										<li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+										<li class="nav__item"><a href="about-us.html" class="nav__link">About</a></li>
+										<li class="nav__item"><a href="azerbaijan.html" class="nav__link">Azerbaijan</a></li>
 										<li class="nav__item"><a href="tours.html" class="nav__link">Tours</a></li>
 										<li class="nav__item"><a href="visa-support.html" class="nav__link">Visa Support</a></li>
 										<li class="nav__item"><a href="contact.html" class="nav__link">Contacts</a></li>
@@ -63,16 +60,22 @@
 
 							
 
-							   <div class="custom-select">
-									<select>
-										<option value="0" >EN</option>
-										<option value="1">AZE</option>
-										<option value="2">RU</option>
-									</select>
-								</div>
-						</div>
-					</nav>
-			    </div>
+							    <div class="h-lang">
+									<a href="#" class="h-lang-link dropdownButton">
+										AZ
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
+									<ul class="h-lang-list dropdownMenu" style="display: none;">
+										<li class="h-lang-item">
+											<a href="#">RU</a>
+										</li>
+										<li class="h-lang-item">
+											<a href="#">EN</a>
+										</li>
+									</ul>
+                                </div>
+						   </div>
+				</nav>
         </header>
         	<!-- <section class="ftco-section">
 				<div class="container">
@@ -113,6 +116,9 @@
 <!-- Intro -->
        <section class="azerbaijan">
 				<div class="image-back" style = "background-image: url('./img/images/tours/Rectangle 68.jpg')";>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="#">qabala</a>
+                        </div>
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-12 col-12">
@@ -127,9 +133,7 @@
                                         <div class="north">
                                             <a href="#" >North</a>
                                         </div>
-                                         <div id="mySidenav" class="sidenav">
-                                            <a href="#">qabala</a>
-                                        </div>
+                                        
                                          <div class="see-more-north">
                                                 <img src="img/images/tours/Vector 11.png" alt="">
                                                 <a href="#" id="see-more">more</a>
@@ -506,18 +510,22 @@
 	 </div>
 	 <div class="container-fluid second-footer">
 		 <div class="row footer-orange">
-			 <div class="col-lg-6 col-12">
-				 <div class="footer-orange-left">
-					 <p>
-					   All Right Reserved by <strong>   World Travel LLC 2006-2021</strong>
-					 </p>
-				 </div>
-			 </div>
-			 <div class="col-lg-6 col-12">
-               <div class="footer-orange_right">
-                   <p>
-					  Powered by <a href="#" target="_blank">hpc.az</a>
-					 </p>
+            <div class="container">
+               <div class="row">
+                    <div class="col-lg-6 col-12">
+                    <div class="footer-orange-left">
+                        <p>
+                        All Right Reserved by <strong>   World Travel LLC 2006-2021</strong>
+                        </p>
+                    </div>
+			   </div>
+			   <div class="col-lg-6 col-12">
+                    <div class="footer-orange_right">
+                        <p>
+                            Powered by <a href="#" target="_blank">hpc.az</a>
+                            </p>
+                    </div>
+                </div>
                </div>
             </div>
 		 </div>

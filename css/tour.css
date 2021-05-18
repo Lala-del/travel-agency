@@ -54,14 +54,15 @@
 }
 
 .tab__inner {
-	background-repeat: no-repeat;
+    padding: 97px 91px;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
-    bottom: 0px;
+    bottom: -83px;
     width: 236px;
+    right: 72px;
     height: 215px;
-	
 }
 
 .tour__main span {
@@ -493,3 +494,5 @@
 .day_six_main {
 	 bottom: 100px;
 }
+
+

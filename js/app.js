@@ -210,3 +210,36 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
+
+
+
+//language-dropdown
+    var dropdownButton = $('.dropdownButton');
+    var dropdownMenu = $('.dropdownMenu');
+
+    // Button click
+    dropdownButton.on('click', function () {
+        var _this = $(this);
+
+        dropdownButton.not(_this).removeClass('active').siblings('.dropdownMenu').slideUp(300);
+        _this.toggleClass('active').siblings('.dropdownMenu').slideToggle(300);
+    });
+
+
+
+     $(document).on('click touchstart', function(e) {
+        var target = e.target;
+
+        if (!$(target).is('.dropdownButton')) {
+            dropdownMenu.slideUp(300);
+            dropdownButton.removeClass('active');
+        }
+        if (!$(target).parents('.dropdownButton')) {
+            dropdownMenu.slideUp(300);
+            dropdownButton.removeClass('active');
+        }
+        if (!$(target).parents('.dropdownMenu')) {
+            dropdownMenu.slideUp(300);
+            dropdownButton.removeClass('active');
+        }
+    });
