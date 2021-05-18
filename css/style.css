@@ -401,12 +401,12 @@ input, textarea {
 
 .visa__company h1:after {
     content: '';
-    width: 15%;
+    width: 12%;
     border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
-    left:-3px;
-    top: 16px;
+    left: 0px;
+    top: 8px;
     z-index: 1;
 }
 
@@ -428,18 +428,18 @@ input, textarea {
     border-bottom: solid 3px #F15C2F;
     position: absolute;
 	border-radius: 3px;
-    left: 12px;
+    left: 15px;
     top: -3px;
     z-index: 1;
 }
 
 .intro__company h1:after {
     content: '';
-    width: 15%;
+    width: 10%;
     border-bottom: solid 3px #F15C2F;
     position: absolute;
-	border-radius: 3px;
-    left: 6px;
+    border-radius: 3px;
+    left: 12px;
     top: 120px;
     z-index: 1;
 }
@@ -758,6 +758,10 @@ input, textarea {
 	color: #2D2522;
 }
 
+.get_in_touch form {
+	padding-top: 10px;
+}
+
 
 .title-box .text:after {
 	content: '';
@@ -766,7 +770,7 @@ input, textarea {
     position: absolute;
 	border-radius: 3px;
     left: 14px;
-    bottom: -20px;
+    top: 103px;
     z-index: 1;
 }
 
@@ -902,7 +906,7 @@ input, textarea {
 
 .tags span {
 	width: fit-content;
-	margin: 8px 5px;
+	margin: 8px 5px 8px 0px;
 	display:inline-block;
 	font-family: Gilroy;
 	font-style: normal;
@@ -1235,18 +1239,17 @@ input, textarea {
 
 .visa__content-text {
 	display:flex;
-	justify-content: space-between;
 }
 
 .visa__img {
 	width: 100%;
 	display:inline-block;
 	border-radius: 8px;
-	 background-size: contain;
-	 background-position: bottom;
+	 background-size: cover;
 	 background-repeat: no-repeat;
 	 overflow-x: hidden;
-	 height:230px;
+	 height:210px;
+	 margin: 10px 0px;
 }
 
 
@@ -1263,17 +1266,17 @@ input, textarea {
     letter-spacing: 2px;
 	color: #2D2522;
 	position: relative;
-	padding: 19px 22px;
+	padding: 33px 0px;
 }
 
 .visa__info h3:after {
 	content: '';
-    width: 15%;
+    width: 24%;
     border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
-    left:19px;
-    top: 10px;
+    left: -2px;
+    top: 13px;;
     z-index: 1;
 }
 
@@ -1283,7 +1286,7 @@ input, textarea {
 	font-size: 16px;
 	line-height: 26px;
 	color: #4F4F4F;
-	padding:0px  22px;
+	padding:0px;
 }
 
 .visa__urgent {
@@ -1296,12 +1299,12 @@ input, textarea {
 
 .last__info {
 	font-style: normal;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 23px;
-	color: #4F4F4F;
-	letter-spacing: 1px;
-	padding: 5px 3px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #4F4F4F;
+    letter-spacing: 1px;
+    padding: 16px 3px;;
 }
 
 .last__info strong {
@@ -1369,12 +1372,12 @@ input, textarea {
 
 .contact__row h2:after{
     content: '';
-    width: 17%;
+    width: 13%;
     border-bottom: solid 3px #F15C2F;
     position: absolute;
     border-radius: 3px;
     left: 15px;
-    bottom: 147px;
+    top: -33px;
     z-index: 1;
     padding: 10px 0px;
 }
@@ -2179,4 +2182,16 @@ input, textarea {
  .h-lang .h-lang-list li:last-child a {
 	 margin-top: 2px;
 }
- 
+ iframe:after{
+	 content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 92, 47, 1);
+    opacity: .1;
+	z-index:9999;
+
+}
+

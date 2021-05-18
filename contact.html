@@ -19,9 +19,10 @@
 </head>
 <body>
   <!--Header-->  
-           <header class="header">
+        <header class="header">
              <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
-                <nav class="nav" id="nav-menu"> 
+               <div class="container">
+				   <nav class="nav" id="nav-menu"> 
 						   <div class="nav__content bd-grid">
 
 								<ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
@@ -34,12 +35,12 @@
 				
 								<div class="nav__menu">
 									<ul class="nav__list">
-										<li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+										<li class="nav__item"><a href="index.html" class="nav__link ">Home</a></li>
 										<li class="nav__item"><a href="about-us.html" class="nav__link">About</a></li>
 										<li class="nav__item"><a href="azerbaijan.html" class="nav__link">Azerbaijan</a></li>
 										<li class="nav__item"><a href="tours.html" class="nav__link">Tours</a></li>
 										<li class="nav__item"><a href="visa-support.html" class="nav__link">Visa Support</a></li>
-										<li class="nav__item"><a href="contact.html" class="nav__link">Contacts</a></li>
+										<li class="nav__item"><a href="contact.html" class="nav__link active">Contacts</a></li>
 									</ul>
 								</div>
 								
@@ -75,7 +76,8 @@
 									</ul>
                                 </div>
 						   </div>
-				</nav>
+				   </nav>
+			   </div>
         </header>
 
         	<!-- <section class="ftco-section">
@@ -124,14 +126,15 @@
             </div>
 		 <div class = "row contact__row">
 			 <div class ="col-lg-6 col-md-6 col-sm-12">
-				 <form id="form-sign-up" action="" autocomplete="off">
-                     <div class="title-box col-12">
+			       <div class="title-box">
                         <h2 >Contact us</h2>
                         <p>
                         Feel free to contact us any time. We will get back to you as soon as we can!
                         </p>
                     </div>
-					 <div class="col-12">
+				 <form id="form-sign-up" action="" autocomplete="off">
+                   
+					 <div class="">
                         <div class="form-group">
 							<label for="username">
 								Name , Surname 
@@ -139,13 +142,13 @@
                             <input type="text" name="username" value="" placeholder="" id="username" required="">
                         </div>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="">
                         <div class="form-group">
 							<label for="email">Email</label>
                             <input type="email" id="email" name="email" value="" placeholder="" required="">
                         </div>
                     </div>
-                     <div class="col-lg-12">
+                     <div class="">
                         <div class="form-group">
 							 <label for="message">Message</label>
                              <textarea id="edit-message" name="message" rows="5" placeholder="" required></textarea><span></span>
@@ -162,7 +165,7 @@
 			 </div>
 			<div class="col-lg-6">
                 <div class="contact-map">
-                    <div id="map" data-lat="40.377005" data-lng="49.820828" style="height: 500px; width: 100%;"></div>
+                    <iframe style="width:100%"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.884532845468!2d49.80353511493223!3d40.389251665234916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc0f97615a7%3A0x17431ae1da16d33f!2sWorld%20Travel%20Agency!5e0!3m2!1sen!2s!4v1621341378743!5m2!1sen!2s" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <div class="address__description-wrapper">
                             <div class="address__description" style="display: none;">
                                 <span>World Travel</span>
@@ -357,12 +360,9 @@
 
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHQPnK3-ufmyzBJ-YcV40BPkj56tQ9EGg&callback=initMap"
-    async defer></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src = "js/app.js"></script>
-	<script src="./js/map.js"></script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="" href="css/owl.carousel.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicons/fav icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicons/favicon worldtravel.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicons/favicon worldtravel.png">
+    <link rel="manifest" href="img/icons/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/icons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <title>World Travel</title>
+</head>
+<body>
+ 
+
+
+<style>
+.map.embed-container {
+    position: relative;
+}
+.map.embed-container #map-notice {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(100, 100, 100);
+    /*for old IE browsers with no support for rgba()*/
+    background-color: rgba(0, 0, 0, .10);
+    color: #ccc;
+    padding: 8px;
+}
+.map.embed-container .map-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+</style>
+<div class="map embed-container">
+    <div id="map-notice" style="display: block;"> </div>
+    <div class="map-overlay" style="display: block;"></div>
+    <iframe style="width:100%" src="https://www.google.com/maps/d/u/0/embed?mid=1QLgh6oEGv29jMx3Bi-gN6KRQh0Y" width="100%" height="461" frameborder="0"></iframe>
+</div>
+<script>
+var onMapMouseleaveHandler = function(event) {
+    $('#map-notice').fadeIn(500);
+    var elemento = $$(this);
+    elemento.on('click', onMapClickHandler);
+    elemento.off('mouseleave', onMapMouseleaveHandler);
+    $('.map-overlay').fadeIn(500);
+}
+var onMapClickHandler = function(event) {
+    $('#map-notice').fadeOut(500);
+    var elemento = $$(this);
+    elemento.off('click', onMapClickHandler);
+    $('.map-overlay').fadeOut(500);
+    elemento.on('mouseleave', onMapMouseleaveHandler);
+}
+$('.map.embed-container').on('click', onMapClickHandler);
+</script>
+
+
+
+</body>
+</html>
