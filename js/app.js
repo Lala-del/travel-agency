@@ -30,6 +30,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 
+
 (function($) {
   $(document).ready(function() {
     var customSelect = $(".custom-select");
@@ -243,3 +244,33 @@ $('.stop').on('click',function(){
             dropdownButton.removeClass('active');
         }
     });
+
+
+
+
+
+
+
+            $(document).ready(function(){
+            $("#see-more").click(function(){
+            $("#mySidenav").fadeToggle();
+             console.log('skdjfgh')
+            });
+           
+        });
+
+    
+
+        $( ".social-icons a" ).hover(function() {
+             console.log(this)
+             
+            $(this).toggleClass('social-inactive');
+
+        });
+        
+
+         $('.regions-item .region').click(function() {
+            $('.regions-item .region').removeClass('active')
+            $(this).addClass('active');
+
+        });
